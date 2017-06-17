@@ -3,9 +3,7 @@ layout: post
 title: Starting out with AMP
 ---
 
-# Starting out with AMP
 <amp-youtube data-videoid="lBTCB7yLs8Y" layout="responsive" width="480" height="270"></amp-youtube>
-
 
 We begin our journey with an [AMP Theme](https://github.com/ageitgey/amplify). 
 Starting today we will improve this Blog daily and evolve as Programmers. 
