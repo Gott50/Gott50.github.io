@@ -2,7 +2,9 @@
 title: A Coders Log
 email:
 description: >
-  Life is a process, Living is change. This Blog is a documentation of my Progress.
+  Life is a process, Living is change.
+  Join me on a journey of constant Improvement.
+  This Blog is the evidence of how continuous effort effects the result.
 logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://Gott50.github.io" # the base hostname & protocol for your site
@@ -10,7 +12,8 @@ paginate:	5 # The number of posts to show per page on your homepage
 
 name: 'Gott50'
 bio: >
-  I am a self taught programmer passionate about CleanCode
+  I am a self taught programmer passionate about CleanCode.
+  I strive towards perfection by improvement in small steps.
 author_image: "/assets/images/author.jpg"
 twitter_username: Gott50
 github_username:  Gott50
