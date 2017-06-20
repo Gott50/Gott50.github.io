@@ -15,8 +15,8 @@ minimum Settings on a separate [Repository](https://github.com/Gott50/minimal-mi
 3. update `Gemfile`
 4. run `bundle update`
 5. replace `_config.yml` and insert page Settings
-6. adjust `_includes/header.html` Line 2:105 to use `{{ site.author.avatar }}` 
-instead of `{{ site.logo }}`
+6. adjust `_includes/header.html` Line 2:105 to use {% raw %}`{{ site.author.avatar }}` 
+instead of `{{ site.logo }}` {% endraw%}
 
 ### Next Steps
 1. migrate the rest
