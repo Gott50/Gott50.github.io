@@ -25,18 +25,18 @@ layout: default
         <section class="author">
           <div class="author-image"></div>
           <h4>{{ site.name }}</h4>
-          <p class="bio">{{site.bio}}</p>
+          <p class="bio">{{site.author.bio}}</p>
 
           <p>
             <span>
-              {% if site.github_username %}
-                {% include icon-github.html username=site.github_username %}
+              {% if site.author.github %}
+                {% include icon-github.html username=site.author.github %}
               {% endif %}
             </span>
 
             <span>
-              {% if site.twitter_username %}
-                {% include icon-twitter.html username=site.twitter_username %}
+              {% if site.author.twitter %}
+                {% include icon-twitter.html username=site.author.twitter %}
               {% endif %}
             </span>
           </p>

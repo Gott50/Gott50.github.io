@@ -72,11 +72,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Gott50"
   avatar           : /assets/images/author.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : >
-                       I am a self taught programmer passionate about CleanCode.
-                       I strive towards perfection by improvement in small steps.
+                       I am a self taught programmer passionate about CleanCode,
+                       striving towards perfection by improving in small steps.
   location         : Munich
   email            :
   uri              :
