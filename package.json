@@ -1,0 +1,27 @@
+{
+  "name": "gott50.github.io",
+  "version": "1.0.0",
+  "description": "A Coders Log",
+  "devDependencies": {
+    "amphtml-validator": "^1.0.20"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "node validator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gott50/Gott50.github.io.git"
+  },
+  "keywords": [
+    "Jekyll",
+    "AMP",
+    "Blog"
+  ],
+  "author": "Gott50",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gott50/Gott50.github.io/issues"
+  },
+  "homepage": "https://Gott50.github.io"
+}
