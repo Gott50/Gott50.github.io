@@ -3,7 +3,7 @@ layout: post
 title: Installing WordPress on Arch/Manjaro
 ---
 
-In order to develop a WordPress Theme we might want to be able to run it locally. 
+In order to develop a WordPress Theme or Plugin we might want to be able to run it locally. 
 That is necessary if you develop offline, have no Server at your disposal or want 
 to see the changes you make instantly. 
 Setting up a WordPress instance on Windows and Mac is pretty convenient, 
