@@ -26,6 +26,7 @@ This Solution can be applied to all File Watchers by JetBrains
     sudo gem install sass --no-user-install
     
 ### Setup in PhpStorm
+Use Sass Preprocessor as Program in File Watcher
 1. got to `File > Settings > Tools > File Watchers`
 2. edit/add SCSS File Watcher 
 3. use the Program at Path: `/usr/lib/ruby/gems/2.4.0/gems/sass-3.5.1/bin/sass`
