@@ -16,9 +16,9 @@ this little tale of my installation Odyssey may be what you are looking for.
 ## Starting out with nothing
 We begin our journey with a fresh installation of Manjaro. 
 Before we can start installing WordPress, we should install all the Software it depends on.
-Namely [Apache](https://wiki.archlinux.org/index.php/Apache_HTTP_Server), 
-[PHP](https://wiki.archlinux.org/index.php/Apache_HTTP_Server#PHP) and 
-[MySQL](https://wiki.archlinux.org/index.php/PHP#MySQL.2FMariaDB) 
+Namely [Apache](/installing-apache-on-arch-manjaro/), 
+[PHP](/installing-php-for-apache-on-arch-manjaro/) and 
+[MySQL](/installing-mysql-for-apache-on-arch-manjaro/) 
 
 
 ### Installing WordPress
