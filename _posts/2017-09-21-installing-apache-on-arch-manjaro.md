@@ -14,7 +14,7 @@ describes everything we need to know and more. Here is the gist:
 ## Installation
 run in Terminal:
 
-    pacman -S apache
+    sudo pacman -S apache
     
 ## Start Apache
 run in Terminal:
