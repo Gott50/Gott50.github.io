@@ -3,14 +3,21 @@ layout: post
 title: Installing WordPress on Arch/Manjaro
 ---
 
-In order to develop a WordPress Theme or Plugin we might want to be able to run it locally. 
-That is necessary if you develop offline, have no Server at your disposal or want 
-to see the changes you make instantly. 
+In order to develop a [WordPress](https://wordpress.org/) 
+[Theme](https://codex.wordpress.org/Theme_Development) or 
+[Plugin](https://codex.wordpress.org/Writing_a_Plugin) 
+we might want to be able to run it locally. 
+That is necessary if you develop offline, have no Server at your disposal or 
+want to see the changes you make instantly. 
 Setting up a WordPress instance on Windows and Mac is pretty convenient, 
-because you can use Software like WAMP and MAMP, which provide Apache and MySQL out of the box.
-Depending on your Linux distribution there is also LAMP, offering the same comfort.
+because you can use Software like [WAMP]() 
+and [MAMP](), 
+which provide Apache and MySQL out of the box.
+Depending on your Linux distribution there is also [LAMP](), 
+offering the same comfort.
 
-If you are using Arch Linux or a distribution based on it like Manjaro, 
+If you are using [Arch Linux]() or a distribution based on it like 
+[Manjaro](https://manjaro.org/), 
 this little tale of my installation Odyssey may be what you are looking for. 
 
 ## Starting out with nothing
@@ -23,7 +30,8 @@ Namely [Apache](/installing-apache-on-arch-manjaro/),
 
 ### Installing WordPress
 The [Tutorial](https://wiki.archlinux.org/index.php/Wordpress) 
-provided by wiki.archlinux.org describes everything we need and more. Here is the gist:
+provided by  [wiki.archlinux.org](https://wiki.archlinux.org) 
+describes everything we need and more. Here is the gist:
 
 ##### 1. Install the wordpress package:
 run  in Terminal:
