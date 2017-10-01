@@ -55,13 +55,13 @@ edit the Apache configuration File `/etc/httpd/conf/httpd.conf` and add:
 ### 3. Restart Apache
 run in Terminal:
 
-    apachectl restart
+    sudo apachectl restart
 
 ### 4. Configure MySQL
 Make sure that MySQL is running!
 To start it run in Terminal:
 
-    systemctl start mysqld
+    sudo systemctl start mysqld
 
 Login as root, create a user and database:
 
