@@ -19,7 +19,7 @@ On clicking the Install Button in the Admin menu a window pops up with the follo
     credentials, you should contact your web host.
 
 ## Solution
-Like suggested in [StackOverflow](https://stackoverflow.com/questions/21316282/wordpress-plugin-installation-failed-to-connect-to-ftp-server-safest-solutio) 
+Like suggested on [StackOverflow](https://stackoverflow.com/questions/21316282/wordpress-plugin-installation-failed-to-connect-to-ftp-server-safest-solutio) 
 it is enough to add a single line of Code the File `/wp-config.php` in our WordPress Directory:
 
     define('FS_METHOD', 'direct');
