@@ -247,4 +247,4 @@ defaults:
 collections:
   projects:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:title/
