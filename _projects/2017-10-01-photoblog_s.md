@@ -1,9 +1,7 @@
 ---
 layout: project
-title: PhotoBlog
+title: PhotoBlog_s
 ---
-
-# PhotoBlog_s
 
 ![PhotoBlog_s Logo](https://i.imgur.com/23yAvFQ.png)
 
