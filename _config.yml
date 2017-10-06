@@ -242,6 +242,12 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      sitemap: true
 
 # Collections
 collections:
