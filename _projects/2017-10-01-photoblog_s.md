@@ -1,6 +1,7 @@
 ---
 layout: project
 title: PhotoBlog_s
+excerpt: "The WordPress theme for Blogging Photographers"
 ---
 
 ![PhotoBlog_s Logo](https://i.imgur.com/23yAvFQ.png)
