@@ -1,6 +1,6 @@
 ---
 layout: project
 title: Distributor
-excerpt: A Server, connecting ApiAI to Messengers
+excerpt: a Server, connecting ApiAI to Messengers
 ---
 
