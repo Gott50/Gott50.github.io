@@ -1,8 +1,9 @@
+{% if page.analytics.provider == google and site.analytics.google.tracking_id%}
 <amp-analytics type="googleanalytics" id="amp-analytics">
 <script type="application/json">
 {
   "vars": {
-    "account": "{{ site.analytics_id }}"
+    "account": "{{ site.analytics.google.tracking_id }}"
   },
   "triggers": {
     "trackPageview": {
@@ -13,3 +14,4 @@
 }
 </script>
 </amp-analytics>
+{% endif %}
