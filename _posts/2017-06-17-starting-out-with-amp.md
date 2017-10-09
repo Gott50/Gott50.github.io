@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Starting out with AMP
+amp-youtube: true
 ---
 
 We begin our journey with an [AMP Theme](https://github.com/ageitgey/amplify). 
