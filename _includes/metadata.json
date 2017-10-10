@@ -1,4 +1,10 @@
-
+/*
+{% if page.author and site.data.authors[page.author] %}
+{% assign author = site.data.authors[page.author] %}
+{% else %}
+{% assign author = site.author %}
+{% endif %}
+*/
 {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
@@ -16,14 +22,14 @@
     "name": "{{ site.title }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.logo | prepend: site.baseurl | prepend: site.url }}",
+      "url": "{{ site.og_image | prepend: site.baseurl | prepend: site.url }}",
       "width": "60",
       "height": "60"
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "{{ site.logo | prepend: site.baseurl | prepend: site.url }}",
+    "url": "{{ author.avatar | prepend: site.baseurl | prepend: site.url }}",
     "height": "60",
     "width": "60"
   }
