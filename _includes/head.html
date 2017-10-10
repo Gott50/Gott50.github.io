@@ -4,9 +4,9 @@
   {% if page.amp-youtube%}
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
   {% endif%}
-  {% comment %}
+  {% if page.analytics.provider == google and site.analytics.google.tracking_id%}
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  {% endcomment %}
+  {% endif%}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
