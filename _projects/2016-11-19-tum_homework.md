@@ -2,7 +2,7 @@
 layout: project
 title: TUM_Homework
 excerpt: Unit Tests for TUM Informatic's Homework
-github.com: Code-Connect/TUM_Homework
+github: Code-Connect/TUM_Homework
 ---
 
 ## Availible Subjects
