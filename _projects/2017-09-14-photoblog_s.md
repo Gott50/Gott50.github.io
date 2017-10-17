@@ -2,7 +2,7 @@
 layout: project
 title: PhotoBlog_s
 excerpt: "The WordPress theme for Blogging Photographers"
-repo: https://github.com/Gott50/PhotoBlog_s
+github: Gott50/PhotoBlog_s
 demo: https://www.fotografie-mal-anders.de/
 ---
 
