@@ -5,6 +5,9 @@ layout: default
   <article class="post">
     <div class="post-meta">
       <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.github %}
+            <a href="{{ page.demo }}">Demo</a>
+      {% endif %}
       <span>
               {% if page.github %}
                 {% include icon-github.html username=page.github %}
