@@ -1,0 +1,73 @@
+---
+layout: default
+title: Contact
+description: contact and we get in touch
+excerpt: contact and we get in touch
+permalink: /contact
+amp-form: true
+---
+
+<main class="content" role="main">
+
+    <header class="blog-header">
+        <h1 class="blog-title">{{ page.title }}</h1>
+        <h2 class="blog-description">{{ page.description }}</h2>
+    </header>
+
+    <div class="cf frame">
+        <form method="post"
+              action-xhr={{ site.static_email }}
+              custom-validation-reporting="show-all-on-submit"
+              target="_blank">
+            <fieldset>
+                <label>
+                    <span>Name:</span>
+                    <input type="text"
+                           name="name"
+                           id="name5"
+                           required
+                           pattern="\w+\s\w+">
+                    <span visible-when-invalid="valueMissing"
+                          validation-for="name5"></span>
+                    <span visible-when-invalid="patternMismatch"
+                          validation-for="name5">
+                      Please enter your first and last name separated by a space (e.g. Jane Miller)
+                    </span>
+                </label>
+                <br>
+                <label>
+                    <span>Email:</span>
+                    <input type="email"
+                           name="email"
+                           id="email5"
+                           required>
+                    <span visible-when-invalid="valueMissing"
+                          validation-for="email5"></span>
+                    <span visible-when-invalid="typeMismatch"
+                          validation-for="email5"></span>
+                </label>
+                <br>
+                <label>
+                    <span>Message:</span>
+                    <textarea rows="5"
+                              name="message"
+                              id="message5"
+                              required></textarea>
+                    <span visible-when-invalid="valueMissing"
+                          validation-for="message5"></span>
+                </label>
+                <br>
+                <input type="submit"
+                       value="Send">
+            </fieldset>
+            <div submit-success>
+                    Thank you. We received our Message.
+            </div>
+            <div submit-error>
+                    Thank you for your Message.
+            </div>
+        </form>
+    </div>
+</main>
+
+{% include footer.html %}

@@ -254,3 +254,7 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+
+
+# Contact
+static_email: "https://formspree.io/xxGott50xx@gmail.com"
