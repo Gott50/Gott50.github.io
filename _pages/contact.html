@@ -14,45 +14,55 @@ amp-form: true
         <h2 class="blog-description">{{ page.description }}</h2>
     </header>
 
-    <!--<div class="cf frame">-->
-        <!--<form method="post"-->
-              <!--class="p2"-->
-              <!--action-xhr="/components/amp-form/submit-form-xhr"-->
-              <!--target="_top">-->
-            <!--<div class="ampstart-input inline-block relative mb3">-->
-                <!--<input type="email"-->
-                       <!--name="email"-->
-                       <!--placeholder="Email...">-->
-            <!--</div>-->
-            <!--<input type="submit"-->
-                   <!--value="OK"-->
-                   <!--class="ampstart-btn caps">-->
-            <!--<div submit-success>-->
-                <!--<template type="amp-mustache">-->
-                    <!--Success! Thanks for trying the-->
-                    <!--<code>amp-form</code> demo!-->
-                <!--</template>-->
-            <!--</div>-->
-            <!--<div submit-error>-->
-                <!--<template type="amp-mustache">-->
-                    <!--Error!-->
-                <!--</template>-->
-            <!--</div>-->
-        <!--</form>-->
-
-        <form target="_blank" action={{ site.static_email }} method="POST" name="sentMessage" id="contactForm" novalidate>
-            <div class="row control-group">
-                <div class="form-group col-xs-12 floating-label-form-group controls">
-                    <label>Participation</label>
-                    <select name="participation" class="form-control" id="participation" required
-                            data-validation-required-message="Please enter how you want to participate.">
-                        <option value="Coder">Coder</option>
-                        <option value="Mentor">Mentor</option>
-                        <option value="Partner">Partner</option>
-                    </select>
-                    <p class="help-block text-danger"></p>
-                </div>
+    <div class="cf frame">
+        <form method="post"
+              action-xhr={{ site.static_email }}
+              custom-validation-reporting="show-all-on-submit"
+              target="_blank">
+            <fieldset>
+                <label>
+                    <span>Name:</span>
+                    <input type="text"
+                           name="name"
+                           id="name5"
+                           required
+                           pattern="\w+\s\w+">
+                    <span visible-when-invalid="valueMissing"
+                          validation-for="name5"></span>
+                    <span visible-when-invalid="patternMismatch"
+                          validation-for="name5">
+                      Please enter your first and last name separated by a space (e.g. Jane Miller)
+                    </span>
+                </label>
+                <br>
+                <label>
+                    <span>Email:</span>
+                    <input type="email"
+                           name="email"
+                           id="email5"
+                           required>
+                    <span visible-when-invalid="valueMissing"
+                          validation-for="email5"></span>
+                    <span visible-when-invalid="typeMismatch"
+                          validation-for="email5"></span>
+                </label>
+                <br>
+                <input type="submit"
+                       value="Subscribe">
+            </fieldset>
+            <div submit-success>
+                <template type="amp-mustache">
+                    Subscription successful!
+                </template>
             </div>
+            <div submit-error>
+                <template type="amp-mustache">
+                    Subscription failed!
+                </template>
+            </div>
+        </form>
+
+        <form target="_blank" action-xhr={{ site.static_email }} method="POST" name="sentMessage" id="contactForm" novalidate>
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Name</label>
@@ -68,10 +78,6 @@ amp-form: true
                            required data-validation-required-message="Please enter your email address.">
                     <p class="help-block text-danger"></p>
                 </div>
-            </div>
-            <div>
-                <input type="hidden" name="_subject" value="New submission!">
-                <input type="text" name="_gotcha" style="display:none"/>
             </div>
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
