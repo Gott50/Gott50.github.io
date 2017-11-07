@@ -11,8 +11,13 @@ layout: default
 
   <div class="cf frame">
     {% for post in paginator.posts %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-        <div class="article-item">
+      {% if post.author and site.data.authors[post.author] %}
+      {% assign author = site.data.authors[post.author] %}
+      {% else %}
+      {% assign author = site.author %}
+      {% endif %}
+      <article class="post" itemprop="blogPost" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="article-item" >
           <header class="post-header">
             <h2 class="post-title" itemprop="headline"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
           </header>
@@ -21,6 +26,10 @@ layout: default
           </section>
           <div class="post-meta">
             <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+              <amp-img itemprop="image" width="1em" height="1em" src="{{ author.avatar | prepend: site.baseurl | prepend: site.url }}">
+                {{ author.avatar | prepend: site.baseurl | prepend: site.url }}
+              </amp-img>
+            <span itemprop="author">{{ author.name }}</span>
           </div>
         </div>
       </article>
