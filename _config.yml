@@ -59,8 +59,8 @@ facebook:
 og_image                 : /assets/images/author.png # Open Graph/Twitter default site image
 
 # SEO-Tags
-image                 : /assets/images/author.png # Open Graph/Twitter default site image
-lang                 : "en" # Open Graph/Twitter default site image
+logo                     : /assets/images/author.png
+lang                     : "en_US" # Open Graph/Twitter default site image
 
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -250,6 +250,7 @@ defaults:
       share: true
       related: true
       meta: BlogPosting
+      image: /assets/images/author.png
   # _pages
   - scope:
       path: ""
