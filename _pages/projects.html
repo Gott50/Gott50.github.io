@@ -6,16 +6,16 @@ excerpt: My Projects
 permalink: /projects/
 ---
 
-<main class="content" role="main">
+<main class="content" role="main" itemscope itemtype="http://schema.org/ItemList">
 
   <header class="blog-header">
-      <h1 class="blog-title">{{ page.title }}</h1>
-      <h2 class="blog-description">{{ page.description }}</h2>
+      <h1 class="blog-title" itemprop="name">{{ page.title }}</h1>
+      <h2 class="blog-description" itemprop="description">{{ page.description }}</h2>
   </header>
 
   <div class="cf frame">
     {% for post in site.projects %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      <article class="post" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" role="article">
         <div class="article-item">
           <header class="post-header">
             <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
@@ -24,12 +24,12 @@ permalink: /projects/
             <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
           </section>
           <div class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
             <span>
               {% if post.github %}
                 {% include icon-github.html username=post.github %}
               {% endif %}
             </span>
+            <meta itemprop="position" content="{{ forloop.index }}" />
           </div>
         </div>
       </article>
