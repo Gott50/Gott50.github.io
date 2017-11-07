@@ -26,6 +26,8 @@ layout: default
           </section>
           <div class="post-meta">
             <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+            <meta itemprop="dateModified" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }} {% elsif page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}" />
+            <meta itemprop="mainEntityOfPage" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
             <meta itemprop="image" content="{{ author.avatar | prepend: site.baseurl | prepend: site.url }}" />
             <meta itemprop="author" content="{{ author.name }}" />
             <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
