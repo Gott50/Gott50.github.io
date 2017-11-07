@@ -31,7 +31,11 @@
 
 
   <script type="application/ld+json">
-  {% include metadata.json %}
+  {% if page.type == post %}
+    {% include metadata-BlogPosting.json %}
+  {% else %}
+    {% include metadata.json %}
+  {% endif %}
   </script>
 
   <style amp-custom>
