@@ -33,6 +33,8 @@
   <script type="application/ld+json">
   {% if page.meta == "BlogPosting" %}
     {% include metadata-BlogPosting.json %}
+  {% elsif page.meta == "AboutPage" %}
+    {% include metadata-AboutPage.json %}
   {% else %}
     {% include metadata.json %}
   {% endif %}
