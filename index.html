@@ -30,9 +30,7 @@ layout: default
             <meta itemprop="author" content="{{ author.name }}" />
             <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
               <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-                <amp-img itemprop="url" width="1em" height="1em" src="{{ site.logo | prepend: site.baseurl | prepend: site.url }}">
-                  {{ site.logo | prepend: site.baseurl | prepend: site.url }}
-                </amp-img>
+                <meta itemprop="url" content="{{ site.logo | prepend: site.baseurl | prepend: site.url }}" />
               </span>
               <meta itemprop="name" content="{{ site.title }}" />
             </span>
