@@ -31,7 +31,7 @@
 
 
   <script type="application/ld+json">
-  {% if page.type == post %}
+  {% if page.meta == "BlogPosting" %}
     {% include metadata-BlogPosting.json %}
   {% else %}
     {% include metadata.json %}
