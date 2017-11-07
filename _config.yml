@@ -10,7 +10,6 @@ description              : >
 url                      : https://Gott50.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : Gott50/gott50.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/author.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -56,10 +55,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : /assets/images/author.png # Open Graph/Twitter default site image
-
-# SEO-Tags
-logo                     : /assets/images/author.png
+logo                     : /assets/images/author.png # Open Graph/Twitter default site image
 
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -249,7 +245,7 @@ defaults:
       share: true
       related: true
       meta: BlogPosting
-      image: /assets/images/author.png
+      image: /assets/images/author.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
   # _pages
   - scope:
       path: ""

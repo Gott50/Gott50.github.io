@@ -32,8 +32,8 @@ layout: default
             <span itemprop="author">{{ author.name }}</span>
             <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
               <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-                <amp-img itemprop="url" width="1em" height="1em" src="{{ site.og_image | prepend: site.baseurl | prepend: site.url }}">
-                  {{ site.og_image | prepend: site.baseurl | prepend: site.url }}
+                <amp-img itemprop="url" width="1em" height="1em" src="{{ site.logo | prepend: site.baseurl | prepend: site.url }}">
+                  {{ site.logo | prepend: site.baseurl | prepend: site.url }}
                 </amp-img>
               </span>
               <span itemprop="name">{{ site.title }}</span>
