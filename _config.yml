@@ -42,27 +42,29 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+# SEO Related / SEO-Tags
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
 
-# Social Sharing
+# Social Sharing / SEO-Tags
 twitter:
   username               :
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
+  app_id                 : # a Facebook app ID for Facebook insights
+  publisher              : # a Facebook page URL or ID of the publishing entity
+  admins                 : # a Facebook user ID for domain insights linked to a personal account
 logo                     : /assets/images/author.png # Open Graph/Twitter default site image
 
-# For specifying social profiles
+# For specifying social profiles / SEO-Tags
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - https://github.com/Gott50
 
 # Analytics
 analytics:
