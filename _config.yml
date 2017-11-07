@@ -1,5 +1,5 @@
 # Site Settings
-locale                   : "en"
+lang                     : "en_US"
 title                    : A Coders Log
 title_separator          : "-"
 name                     : Gott50
@@ -60,7 +60,6 @@ og_image                 : /assets/images/author.png # Open Graph/Twitter defaul
 
 # SEO-Tags
 logo                     : /assets/images/author.png
-lang                     : "en_US" # Open Graph/Twitter default site image
 
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
