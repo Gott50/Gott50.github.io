@@ -57,6 +57,11 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : /assets/images/author.png # Open Graph/Twitter default site image
+
+# SEO-Tags
+image                 : /assets/images/author.png # Open Graph/Twitter default site image
+lang                 : "en" # Open Graph/Twitter default site image
+
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -182,6 +187,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -190,6 +196,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-seo-tag
 
 
 # Archives
