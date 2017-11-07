@@ -1,6 +1,16 @@
 ---
 layout: post
 title: Fixing PhpStorm SCSS File Watcher
+excerpt: >
+    Problem: 
+    When activated the PhpStorm SCSS File Watcher throws this Exception:
+        
+        /usr/lib/node_modules/less/bin/lessc --no-cache --update test.scss:test.css
+        Unable to interpret argument no-cache - if it is a plugin (less-plugin-no-cache), make sure that it is installed under or at the same level as less
+        Unable to interpret argument update - if it is a plugin (less-plugin-update), make sure that it is installed under or at the same level as less
+        lessc: ENOENT: no such file or directory, open '.../PhpstormProjects/Project/test.scss:test.css'
+        
+        Process finished with exit code 1
 ---
 
 ## Initial Situation

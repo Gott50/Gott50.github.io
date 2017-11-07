@@ -1,6 +1,15 @@
 ---
 layout: post
 title: Installing WordPress Plugins on Arch Linux / Manjaro
+excerpt: >
+    Problem: 
+    On clicking the Install Button in the Admin menu a window pops up with the following Message:
+    
+        Failed to connect to FTP Server
+        
+        To perform the requested action, WordPress needs to access your web server. 
+        Please enter your FTP credentials to proceed. If you do not remember your 
+        credentials, you should contact your web host.
 ---
 
 ## Initial Situation
