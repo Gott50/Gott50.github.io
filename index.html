@@ -30,6 +30,12 @@ layout: default
                 {{ author.avatar | prepend: site.baseurl | prepend: site.url }}
               </amp-img>
             <span itemprop="author">{{ author.name }}</span>
+            <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+              <amp-img itemprop="logo" width="1em" height="1em" src="{{ author.avatar | prepend: site.baseurl | prepend: site.url }}">
+                {{ author.avatar | prepend: site.baseurl | prepend: site.url }}
+              </amp-img>
+              <span itemprop="name">{{ site.title }}</span>
+            </span>
           </div>
         </div>
       </article>
