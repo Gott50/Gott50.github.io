@@ -235,6 +235,11 @@ compress_html:
 
 # Defaults
 defaults:
+  # default
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/author.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
   # _posts
   - scope:
       path: ""
@@ -247,7 +252,6 @@ defaults:
       share: true
       related: true
       meta: BlogPosting
-      image: /assets/images/author.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
   # _pages
   - scope:
       path: ""
