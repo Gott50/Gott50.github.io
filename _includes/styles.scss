@@ -407,9 +407,14 @@ body {
       a {
         color: black;
         text-decoration: none;
-        &:hover {
-          color: #333333;
-          text-decoration: underline;
+        &:hover{
+          &, .icon{
+            text-decoration: none;
+          }
+          span {
+            color: #333333;
+            text-decoration: underline;
+          }
         }
       }
       .author-image {
