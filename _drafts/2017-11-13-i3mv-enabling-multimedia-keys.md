@@ -13,8 +13,8 @@ In your ~/i3/config add the following keybindings:
     bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
     
     # Sreen brightness controls
-    bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-    bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+    bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+    bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
     
     # Touchpad controls
     bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
@@ -43,3 +43,6 @@ If the XF86* keysyms do not work for you, you can see the available keysyms for 
 Or xev, an interactive tool for finding key symbols:
 
     xev
+    
+
+install xbacklight
