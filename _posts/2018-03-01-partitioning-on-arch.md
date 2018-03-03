@@ -3,7 +3,7 @@ layout: post
 title: Partitioning on Arch
 ---
 
-Today we want to partition a Disk, in order to backup our Linux ext4 Filesystem.
+Today we want to partition a Disk, in order to [backup our Linux ext4 Filesystem](/backup-on-arch/).
 We use ext4, because it enables us to store all symbolic links, devices, permissions, 
 ownerships, modification times, ACLs, and extended attributes.
 
