@@ -1,6 +1,6 @@
 ---
 layout: post
-title: i3vw: Enabling multimedia keys
+title: i3vw - Enabling multimedia keys
 ---
 
 https://faq.i3wm.org/question/3747/enabling-multimedia-keys.1.html
