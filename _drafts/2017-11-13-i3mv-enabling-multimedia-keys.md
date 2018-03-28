@@ -1,11 +1,19 @@
 ---
 layout: post
-title: i3vw - Enabling multimedia keys
+title: i3vm - Enabling MultiMedia keys
 ---
 
-https://faq.i3wm.org/question/3747/enabling-multimedia-keys.1.html
+Today we want to use our MultiMedia Key in i3vm.
 
-In your ~/i3/config add the following keybindings:
+## optional Requirements
+    - pactl
+    - xbacklight
+    - playerctl
+We only have to install the Packages we want to via our MulitMedia Keys.
+
+## i3 Configs
+Like suggested in the [i3vm FAQ](https://faq.i3wm.org/question/3747/enabling-multimedia-keys.1.html)
+we just edit our `~/i3/config` File and add the following keybindings:
 
     # Pulse Audio controls
     bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -25,6 +33,7 @@ In your ~/i3/config add the following keybindings:
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
 
+## Touchpad Script
 The script toggletouchpad.sh for toggling your touchpad should have following content:
 
     #!/bin/bash
@@ -34,15 +43,13 @@ The script toggletouchpad.sh for toggling your touchpad should have following co
         synclient TouchpadOff=0 ;
     fi
 
+## Troubleshooting
 Playerctl is a command-line utility for controlling media players over DBus that works with most players.
 
-If the XF86* keysyms do not work for you, you can see the available keysyms for your computer by executing this command:
+If the XF86* keysyms do not work, we can see the available keysyms for our computer by executing this command:
 
     xmodmap -pke
 
 Or xev, an interactive tool for finding key symbols:
 
     xev
-    
-
-install xbacklight
