@@ -18,4 +18,17 @@ https://manjaro.org/get-manjaro/
     
 ## Install Manjaro
 
+https://wiki.archlinux.org/index.php/Partitioning#.2Fvar
+
+https://wiki.manjaro.org/index.php?title=UEFI_-_Install_Guide
+
 https://forum.manjaro.org/t/installation-with-manjaro-architect-iso/20429
+
+https://wiki.manjaro.org/index.php?title=Installation_with_Manjaro_Architect
+
+https://wiki.manjaro.org/index.php?title=UEFI_-_Install_Guide
+
+https://wiki.manjaro.org/index.php?title=Installation_with_Manjaro_Architect
+
+
+
