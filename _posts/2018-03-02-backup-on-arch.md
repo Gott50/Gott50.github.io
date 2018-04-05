@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Backup on Arch
+title: Backup on Arch Linux
 ---
 
 Today we want to create a Backup of our full System and our other Drives.
@@ -23,3 +23,9 @@ Now we can save our full root Directory excluding unnecessary Files into our `<b
 To store all of our other Drives under our `<backup_folder>` we need to exclude our `<backup_drive>`:
 
     sudo rsync -aAXH --info=progress2 --delete --exclude={"<backup_drive>/*"} /run/media/ /<backup_folder>
+
+## 3. Delete Empty Directories
+After we saved all Files we want to keep, we can cleanup our Backup and delete all empty Directories. 
+This will make it easier to restore the Backup.
+
+    find . -type d -empty -delete
