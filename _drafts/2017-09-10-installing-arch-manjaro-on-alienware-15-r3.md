@@ -4,16 +4,22 @@ title: Installing Arch/Manjaro on Alienware 15 R3
 ---
 
 ## Download Manjaro
-https://manjaro.org/get-manjaro/
+We need to download the current version of the [Manjaro Installation ISO](https://manjaro.org/get-manjaro/) of our choice.
+This may take a while...
 
 
-## BootStick via Mac
+## BootStick on Mac
+First we need to know what `<disk_number>` our Stick has
     
     diskutil list
     
-    diskutil partitionDisk /dev/disk5 1 "Free Space" "unused" "100%"
+Now we can prepare our BootStick. This will delete all Files on it.
     
-    sudo dd if=/<path>/manjaro-architect-17.0.2-stable-x86_64.img.dmg of=/dev/disk5 bs=1m
+    diskutil partitionDisk /dev/disk<disk_number> 1 "Free Space" "unused" "100%"
+
+Then we setup our BootSick with `<manjaro>.iso` we downloaded to the direcotry `<path>`:
+    
+    sudo dd if=/<path>/<manjaro>.iso of=/dev/disk<disk_number> bs=1m
     
     
 ## Install Manjaro
