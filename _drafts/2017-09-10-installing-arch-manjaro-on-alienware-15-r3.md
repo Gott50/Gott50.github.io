@@ -22,6 +22,13 @@ Then we setup our BootSick with `<manjaro>.iso` we downloaded to the direcotry `
     sudo dd if=/<path>/<manjaro>.iso of=/dev/disk<disk_number> bs=1m
     
     
+## Prepare the BIOS
+1. Press `F2` during Boot to enter the BIOS Setup
+2. Go to the Boot Settings
+3. Disable `Secure Boot`
+4. (optional recommended) use `UEIF` as Boot List Option
+
+    
 ## Install Manjaro
 
 https://wiki.archlinux.org/index.php/Partitioning#.2Fvar
@@ -39,7 +46,7 @@ https://wiki.manjaro.org/index.php?title=Installation_with_Manjaro_Architect
 
 
 ## The Kernel chooses the User
-Our Machine the Alienware 15 R3 is only compatible with two Kernels of Manjaro 17.1.17:
+At this time our Machine the Alienware 15 R3 is only compatible with two Kernels of Manjaro 17.1.17:
     - 4.14-rt
     - 4.14 Fallback
 
