@@ -32,7 +32,8 @@ Use the File Watcher Program by [sass-lang.com](http://sass-lang.com/).
 This Solution can be applied to all File Watchers by JetBrains
 
 ### Requirements 
-We will use [npm]() to install Sass.
+We will use [npm](https://www.npmjs.com/) to install Sass.
+On Arch Linux we run in Terminal:
 
     sudo pacman -S npm
 
