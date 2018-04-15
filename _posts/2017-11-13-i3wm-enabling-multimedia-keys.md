@@ -3,7 +3,7 @@ layout: post
 title: i3wm - Enabling MultiMedia keys
 ---
 
-Today we want to use our MultiMedia Key in i3vm.
+Today we want to use our MultiMedia Key in i3wm.
 
 ## optional Requirements
     - pactl
