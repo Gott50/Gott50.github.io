@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Installing PHP for Apache on Arch/Manjaro
 ---
 

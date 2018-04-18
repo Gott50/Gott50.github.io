@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Starting out with AMP
 amp-youtube: true
 ---

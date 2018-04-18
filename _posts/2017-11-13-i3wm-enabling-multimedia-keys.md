@@ -1,5 +1,4 @@
 ---
-layout: post
 title: i3wm - Enabling MultiMedia keys
 ---
 

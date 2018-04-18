@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Backup on Arch Linux
 ---
 

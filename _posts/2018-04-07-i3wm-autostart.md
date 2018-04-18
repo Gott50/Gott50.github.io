@@ -1,6 +1,5 @@
 ---
-layout: post
-title: i3wm - Enable Autostart
+title: i3wm 2- Enable Autostart
 ---
 
 Today we want to enable our Autostart Scripts by starting i3wm.

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Restore Backup on Arch Linux
 ---
 

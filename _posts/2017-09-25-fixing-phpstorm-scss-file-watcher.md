@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Fixing PhpStorm SCSS File Watcher
 excerpt: >
     Problem: 

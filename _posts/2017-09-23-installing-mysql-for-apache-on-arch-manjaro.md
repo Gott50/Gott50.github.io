@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Installing MySQL for Apache on Arch/Manjaro
 ---
 

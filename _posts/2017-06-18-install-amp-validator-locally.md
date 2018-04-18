@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Install AMP Validator locally
 last_modified_at: 2017-10-09
 ---
