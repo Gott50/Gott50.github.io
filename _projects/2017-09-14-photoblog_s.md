@@ -6,7 +6,7 @@ github: Gott50/PhotoBlog_s
 demo: https://www.fotografie-mal-anders.de/
 ---
 
-<amp-img width="600" height="600" layout="responsive" src="https://i.imgur.com/23yAvFQ.png"></amp-img>
+<amp-img alt="PhotoBlog_s Logo" width="600" height="600" layout="responsive" src="https://i.imgur.com/23yAvFQ.png"></amp-img>
 
 The WordPress theme for Blogging Photographers
 
