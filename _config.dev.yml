@@ -2,6 +2,13 @@
 
 url: http://localhost:4000
 
+# SEO Related / SEO-Tags
+webmaster_verifications:
+  google: false
+  bing: false
+  alexa:  false
+  yandex: false
+
 analytics:
   provider: false
 
