@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Installing Apache on Arch/Manjaro
 ---
 

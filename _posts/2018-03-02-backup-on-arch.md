@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Backup on Arch Linux
 ---
 
@@ -9,17 +8,17 @@ enables us to copy our Files, with all their MetaData, to any directory.
 This includes all symbolic links, devices, permissions, ownerships, modification times, ACLs, and extended attributes.
 
 
-### 0. Setup external Drive with a Linux File System
+## 0. Setup external Drive with a Linux File System
 To save all our MetaData, we need to [partition a Disk with ext4](/partitioning-on-arch/), 
 a File System that can store this kind of information.
 
 
-### 1. Backup Full System
+## 1. Backup Full System
 Now we can save our full root Directory excluding unnecessary Files into our `<backup_folder>`:
 
     sudo rsync -aAXH --info=progress2 --delete --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/*/.local/share/Trash/","/home/*/.cache/*"} / /<backup_folder>
 
-### 2. Backup other Drives
+## 2. Backup other Drives
 To store all of our other Drives under our `<backup_folder>` we need to exclude our `<backup_drive>`:
 
     sudo rsync -aAXH --info=progress2 --delete --exclude={"<backup_drive>/*"} /run/media/ /<backup_folder>
@@ -29,3 +28,9 @@ After we saved all Files we want to keep, we can cleanup our Backup and delete a
 This will make it easier to restore the Backup.
 
     find . -type d -empty -delete
+
+## 4. Save Pacman
+We can save a lot of Time and speed up the installation on a new system, 
+if we save a [List of installed Packages](https://wiki.archlinux.org/index.php/Pacman/Tips_and_tricks#List_of_installed_packages) called `pkglist.txt`:
+
+    sudo pacman -Qqe > pkglist.txt

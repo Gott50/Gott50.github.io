@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Installing WordPress Plugins on Arch Linux / Manjaro
 excerpt: >
     Problem: 

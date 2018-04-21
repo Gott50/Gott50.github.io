@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Fixing PhpStorm SCSS File Watcher
 excerpt: >
     Problem: 
@@ -31,12 +30,18 @@ When activated the PhpStorm SCSS File Watcher throws this Exception:
 Use the File Watcher Program by [sass-lang.com](http://sass-lang.com/). 
 This Solution can be applied to all File Watchers by JetBrains
 
+### Requirements 
+We will use [npm](https://www.npmjs.com/) to install Sass.
+On Arch Linux we run in Terminal:
+
+    sudo pacman -S npm
+
 ### [Installation](http://sass-lang.com/install)
 
-    sudo gem install sass --no-user-install
+    sudo npm install -g sass
     
 ### Setup in PhpStorm
 Use Sass Preprocessor as Program in File Watcher
 1. got to `File > Settings > Tools > File Watchers`
 2. edit/add SCSS File Watcher 
-3. use the Program at Path: `/usr/lib/ruby/gems/2.4.0/gems/sass-3.5.1/bin/sass`
+3. use the Program at Path: `/usr/bin/scss`

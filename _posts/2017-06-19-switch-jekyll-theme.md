@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Switch Jekyll Theme - Day 1
 ---
 
