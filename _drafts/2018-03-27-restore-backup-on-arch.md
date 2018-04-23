@@ -2,12 +2,10 @@
 title: Restore Backup on Arch Linux
 ---
 
+After making a [Backup on Arch Linux](/backup-on-arch) and Installing it again, 
+we are now able restore our Backup.
+
 https://wiki.archlinux.org/index.php/Rsync#As_a_backup_utility
-
-## /home and /opt
-
-## Restore Configs from <.dot> Files
-https://wiki.manjaro.org/index.php?title=Important_hidden_.dot_files_in_your_home_partition
 
 
 ## Restore Pacman
@@ -28,4 +26,11 @@ To skip already installed packages, use --needed.
 Use comm -13 <(pacman -Qqdt | sort) <(pacman -Qqdtt | sort) > optdeplist.txt to also create a list of the installed optional dependencies which can be reinstalled with --asdeps.
 In case the list includes foreign packages, such as AUR packages, remove them first:
 
-    sudo pacman -S $(comm -12 <(pacman -Slq | sort) <(sort pkglist.txt))
+    sudo pacman -S --needed $(comm -12 <(pacman -Slq | sort) <(sort pkglist.txt))
+
+
+
+## /home and /opt
+
+## Restore Configs from <.dot> Files
+https://wiki.manjaro.org/index.php?title=Important_hidden_.dot_files_in_your_home_partition
