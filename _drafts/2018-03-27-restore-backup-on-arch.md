@@ -15,9 +15,13 @@ listed in the `pkglist.txt` File:
 All AUR Packages need to be installed manually again.
 
 
-## /home and /opt
-Now we can `rsync` our /home and /opt
+## rsync /home
+Now we can restore all our Configs from the <.dot> Files by `rsync` our `/home`.
+`cd` in your Backup of your /home and run:
 
+    sudo rsync -aAXH --info=progress2 ./ /home
+    
+## rsync /opt
+Then `cd` in your Backup of your `/opt` and run:
 
-## Restore Configs from <.dot> Files
-https://wiki.manjaro.org/index.php?title=Important_hidden_.dot_files_in_your_home_partition
+    sudo rsync -aAXH --info=progress2 ./ /opt
