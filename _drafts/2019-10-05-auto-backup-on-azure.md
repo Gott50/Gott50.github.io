@@ -28,3 +28,56 @@ run the following command in Terminal and repalce <account> with the name of you
 
 
 ### (Cron Backup Script)[https://ctaas.de/rsync.htm]
+
+#### 1. add Bash Script
+add the following Code as a File called *cron_back.sh*
+
+    #!/bin/bash
+    account=$1
+    source=$2      # Which directory shall be saved?
+    backup="https://$account.blob.core.windows.net/backup"
+    
+    weekday=$(date +"%a")
+    day=$(date +"%d")
+    month=$(date +"%m")
+    
+    function backup ()
+    {
+     azcopy sync "$source/" "$backup/$1/" --recursive --delete-destination=true --exclude="/dev/*;/proc/*;/sys/*;/tmp/*;/run/*;/mnt/*;/media/*;/lost+found;/home/*/.local/share/Trash/;/home/*/.cache/*" >"$source/_last_backup.txt" 2>&1
+     echo -e '\n'-- '\n'last backup: $(date "+%Y-%m-%d %H:%M:%S") >> "$source/_last_backup.txt"
+    }
+    
+    if [[ $day != 01 && $day != 09 && $day != 16 && $day != 24 ]]; then
+     backup $weekday
+    fi
+    
+    case "$day" in 09) backup 09 ;; esac
+    case "$day" in 16) backup 16 ;; esac
+    case "$day" in 24) backup 24 ;; esac
+    case "$month" in 02|04|06|08|10|12)
+     case "$day" in 01)
+     backup Mg
+     ;; esac
+    ;; esac
+    case "$month" in 01|03|05|07|09|11)
+     case "$day" in 01)
+     backup Mu
+     ;; esac
+    ;; esac
+
+    
+#### 2. make Bash Script executable
+run in Terminal
+    
+    chmod +x cron_back.sh
+    
+#### 3. schedule CronJob for automation
+run in Terminal
+
+    export EDITOR=vim
+    crontab -e
+    
+type in and replace <path_to> with the path to the Script, <account> with the Azure Storage Account and <source> the Directory to be saved without the ending /
+
+    0 */6 * * * /<path_to>/cron_back.sh <account> <source>
+
