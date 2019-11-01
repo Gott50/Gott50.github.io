@@ -35,7 +35,7 @@ add the following Code as a File called *cron_back.sh*
     #!/bin/bash
     account=$1
     source=$2      # Which directory shall be saved?
-    backup="https://$account.blob.core.windows.net/backup"
+    backup="https://$account.blob.core.windows.net"
     
     weekday=$(date +"%a")
     day=$(date +"%d")
@@ -43,8 +43,11 @@ add the following Code as a File called *cron_back.sh*
     
     function backup ()
     {
-     azcopy sync "$source/" "$backup/$1/" --recursive --delete-destination=true --exclude="/dev/*;/proc/*;/sys/*;/tmp/*;/run/*;/mnt/*;/media/*;/lost+found;/home/*/.local/share/Trash/;/home/*/.cache/*" >"$source/_last_backup.txt" 2>&1
-     echo -e '\n'-- '\n'last backup: $(date "+%Y-%m-%d %H:%M:%S") >> "$source/_last_backup.txt"
+     destination="$backup/backup${1,,}"
+     azcopy mkdir "$destination"
+      azcopy sync "$source/" "$destination" --recursive --delete-destination=true --exclude="/dev/*;/proc/*;/sys/*;/tmp/*;/run/*;/mnt/*;/media/*;/lost+found;/home/*/.local/share/Trash/;/home/*/.cache/*" >"./_last_backup.txt" 2>&1
+      echo -e '\n'-- '\n'last backup: $(date "+%Y-%m-%d %H:%M:%S") >> "./_last_backup.txt"
+      azcopy cp ./_last_backup.txt $destination/_last_backup_$(date "+%Y-%m-%d").txt
     }
     
     if [[ $day != 01 && $day != 09 && $day != 16 && $day != 24 ]]; then
