@@ -16,7 +16,7 @@ Now we can prepare our BootStick. This will delete all Files on it.
     
     diskutil partitionDisk /dev/disk<disk_number> 1 "Free Space" "unused" "100%"
 
-Then we setup our BootSick with `<manjaro>.iso` we downloaded to the direcotry `<path>`:
+Then we setup our BootSick with `<manjaro>.iso` we downloaded to the directory `<path>`:
     
     sudo dd if=/<path>/<manjaro>.iso of=/dev/disk<disk_number> bs=1m
     
